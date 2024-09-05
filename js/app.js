@@ -37,7 +37,7 @@ function exibirItens(itens) {
           <div class="info-meta">
             <div class="info-meta-titulo">
               <h2>
-                <a href="#" target="_blank">${item.titulo}</a> 
+                ${item.titulo}
               </h2>
               <h3>${item.categoria}</h3>
             </div>
@@ -69,7 +69,7 @@ function exibirItens(itens) {
 
   botoesCurtir.forEach(botao => {
     botao.addEventListener('click', () => {
-      const nomeAtleta = botao.parentElement.querySelector('a').textContent;
+      const nomeAtleta = botao.parentElement.querySelector('h2').textContent.trim();
   
       console.log(`Você curtiu o perfil de: ${nomeAtleta}`);
 

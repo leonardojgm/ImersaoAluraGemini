@@ -1,23 +1,25 @@
-const botoesCurtir = document.querySelectorAll('.item-resultado button');
-const resultadosPesquisa = document.getElementById('resultados-pesquisa');
 
-botoesCurtir.forEach(botao => {
-  botao.addEventListener('click', () => {
-    const nomeAtleta = botao.parentElement.querySelector('a').textContent;
-    console.log(`Você curtiu o perfil de: ${nomeAtleta}`);
-  });
+const resultadosPesquisa = document.getElementById('resultados-pesquisa');
+const campoPesquisa = document.getElementById('campo-pesquisa');
+
+campoPesquisa.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    pesquisar();
+  }
+});
+
+campoPesquisa.addEventListener('input', () => {
+  pesquisar();
 });
 
 function pesquisar() {  
-  const termoPesquisa = document.getElementById('campo-pesquisa').value;
   const resultadosFiltrados = dados.filter(item => {
-    const termoMinusculo = termoPesquisa.toLowerCase();
+    const termoMinusculo = campoPesquisa.value.toLowerCase();
 
     return item.titulo.toLowerCase().includes(termoMinusculo) ||
            item.descricao.toLowerCase().includes(termoMinusculo) ||
            item.categoria.toLowerCase().includes(termoMinusculo);
-  });
-  
+  });  
   
   resultadosPesquisa.innerHTML = "";
 
@@ -39,7 +41,8 @@ function exibirItens(itens) {
               </h2>
               <h3>${item.categoria}</h3>
             </div>
-            <button title="curtir">
+            <button class="button-curtir" title="curtir">
+              <h4>${item.curtidas}</h4>
               <i class="fa-solid fa-thumbs-up icon-button"></i>
             </button>
           </div>
@@ -61,6 +64,22 @@ function exibirItens(itens) {
   
     resultadosPesquisa.appendChild(itemResultado);
   });
-}
 
-exibirItens(dados);
+  const botoesCurtir = document.querySelectorAll('.button-curtir');
+
+  botoesCurtir.forEach(botao => {
+    botao.addEventListener('click', () => {
+      const nomeAtleta = botao.parentElement.querySelector('a').textContent;
+  
+      console.log(`Você curtiu o perfil de: ${nomeAtleta}`);
+
+      dados.forEach(item => {
+        if (item.titulo === nomeAtleta) {
+          item.curtidas++;
+        }
+      });
+
+      pesquisar()
+    });
+  });
+}

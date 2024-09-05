@@ -6,7 +6,8 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Rayssa_Leal",
     facebook: "https://www.facebook.com/rayssalealsk8",
     instagram: "https://www.instagram.com/rayssalealsk8",
-    foto: "rayssa_leal.jpg"
+    foto: "rayssa_leal.jpg",
+    curtidas: 0
   },
   {
     titulo: "Beatriz Souza",
@@ -15,7 +16,8 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Beatriz_Souza",
     facebook: null,
     instagram: "https://www.instagram.com/_beatrizsouzaar",
-    foto: "beatriz_souza.jpg"
+    foto: "beatriz_souza.jpg",
+    curtidas: 0
   },
   {
     titulo: "Rebeca Andrade",
@@ -24,7 +26,8 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Rebeca_Andrade",
     facebook: "https://www.facebook.com/rebeca.andrade.315428",
     instagram: "https://www.instagram.com/rebecarandrade",
-    foto: "rebeca_andrade.jpg"
+    foto: "rebeca_andrade.jpg",
+    curtidas: 0
   },
   {
     titulo: "Martine Grael",
@@ -33,7 +36,8 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Martine_Grael",
     facebook: "https://www.facebook.com/graelkunze",
     instagram: "https://www.instagram.com/martinegrael",
-    foto: "martine_grael.jpg"
+    foto: "martine_grael.jpg",
+    curtidas: 0
   },
   {
     titulo: "Bruno Soares",
@@ -42,7 +46,8 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Bruno_Soares",
     facebook: "https://www.facebook.com/BrunoSoaresOficial",
     instagram: "https://www.instagram.com/brunosoares82",
-    foto: "bruno_soares.jpg"
+    foto: "bruno_soares.jpg",
+    curtidas: 0
   },
   {
     titulo: "Ana Marcela Cunha",
@@ -51,6 +56,7 @@ let dados = [
     link: "https://pt.wikipedia.org/wiki/Ana_Marcela_Cunha",
     facebook: "https://www.facebook.com/anamarcela92",
     instagram: "https://www.instagram.com/anamarcela92",
-    foto: "ana_marcela_cunha.jpg"
+    foto: "ana_marcela_cunha.jpg",
+    curtidas: 0
   }
 ];

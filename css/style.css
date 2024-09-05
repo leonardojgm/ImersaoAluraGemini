@@ -105,7 +105,7 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: var(--cor-texto-principal); /* Cor do texto */
+    color: var(--cor-principal); /* Cor do texto */
     margin: 0;
 }
 
@@ -128,8 +128,8 @@ section button:hover {
 
 .foto {
     opacity: 1; /* opacidade */
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 250px;
     object-fit: cover;
     margin-right: 20px;
 }
@@ -154,11 +154,18 @@ section button:hover {
 
 .info-meta button {
     margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
-    width: 50px;
+    width: 60px;
     height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+}
+
+.info-meta button h4 {
+    margin-right: 5px; /* Ajuste o espaçamento conforme necessário */   
+}
+
+.info-meta button i {
+    margin-bottom: 4px; /* Ajuste o espaçamento conforme necessário */   
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */

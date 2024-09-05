@@ -6,10 +6,10 @@ https://cursos.alura.com.br/imersoes
 
 Esta é uma versão anabolizada do que foi aprendido em aula, as diferenças da aula são:
 
-1 - Pesquisa dinamica digitando na barra de busca
-2 - Botão de Curtir com contagem
-3 - Estilização de fundo, cores e botões
-4 - Fotos dos atletas
+1. Pesquisa dinamica digitando na barra de busca
+2. Botão de Curtir com contagem
+3. Estilização de fundo, cores e botões
+4. Fotos dos atletas
 
 Publicada a demonstração em em:
 

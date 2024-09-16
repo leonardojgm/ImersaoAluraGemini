@@ -15,5 +15,4 @@ Publicada a demonstração em em:
 
 https://imersao-alura-gemini-rho.vercel.app
 
-![image](https://github.com/user-attachments/assets/4de71cce-e88f-46c5-a9d0-552440c5d20f)
-
+![image](https://github.com/user-attachments/assets/4787b72b-37a9-4a6f-9647-99d8ccecdac0)
